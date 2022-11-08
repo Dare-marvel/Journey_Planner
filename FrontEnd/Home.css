@@ -1,0 +1,42 @@
+
+.main-box {
+    background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-watercolor-background_23-2149018550.jpg?size=626&ext=jpg&uid=R83802851&ga=GA1.2.1332922503.1667489079");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    margin-left: 145px;
+    margin-right: 50px;
+    background-size: contain;
+}
+
+#Myhead{
+    margin-left: 293px;
+    color:rgb(236, 20, 20);
+    font-family: cursive;
+    font-size: xx-large;
+}
+body{
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-colorful-travel-background_23-2149033528.jpg?w=996&t=st=1667494046~exp=1667494646~hmac=3281d9a101694fad68b514e2cca98af2d2dfb7516ff81c14fc8319a582907265");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+#Myform{
+    color: rgba(15, 19, 19, 1);
+    margin-left: -149px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#Source_landmark,#Source_station,#Dst_station,#Dst_landmark,#Submit{
+    margin-left: 408px;
+    padding: 4px;
+}
+
+.img{
+    margin-left: 397px;
+}
+
+#map_icon{
+    height: 50px;
+}
