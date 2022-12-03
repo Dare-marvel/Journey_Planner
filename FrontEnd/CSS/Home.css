@@ -1,0 +1,93 @@
+/* #head{
+    margin-left: 392px;
+} */
+/* #head1{
+    color: red;
+    background-color: aliceblue;
+    text-align: center;
+    border: 10px solid transparent;
+    border-image: url("https://www.w3schools.com/css/border.png") 30 stretch;
+} */
+
+#main-box {
+    margin-top: 52px;
+}
+
+body {
+    background: url(/ProjectImages/MumbaiLocal.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: scroll;
+    size: 120%;
+}
+
+#container-1,
+#container-2,
+#container-3 {
+    font-size: 26px;
+    font-family: Bitter;
+    background-color: rgba(67, 41, 194, 0.7);
+    display: flex;
+    align-items: center;
+    margin-left: 358px;
+    margin-top: 16px;
+    margin-right: 352px;
+    border: 4px ridge red;
+    color: aquamarine;
+    height: 80px;
+}
+
+.icon {
+    height: 80px;
+    margin-top: 7px;
+}
+
+#container-1 p,
+#container-2 p,
+#container-3 p {
+    margin-left: 1em;
+}
+
+/*CSS for typewriter effect*/
+#container {
+    font-family: Pacifico;
+    color: red;
+    background-color: aliceblue;
+    text-align: center;
+    border: 10px solid transparent;
+    border-image: url("https://www.w3schools.com/css/border.png") 30 stretch;
+    text-align: center;
+    margin-left: -4px;
+    margin-right: 11px;
+
+}
+
+#text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 40px;
+    color: red;
+    letter-spacing: 2px;
+}
+
+#cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 40px;
+    background-color: orange;
+    animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: orange;
+    }
+}
