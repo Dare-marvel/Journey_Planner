@@ -1,0 +1,73 @@
+body,html{
+    width: 100vw;
+}
+input::-webkit-calendar-picker-indicator {
+    opacity: 100;
+ }
+.main-box {
+    font-size: 21px;
+    font-family: Lobster ;
+    height: 260px;
+    width: 220px;
+    background-color: wheat;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: black;
+    border: 6px groove black;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-right: 50px;
+    background-size: cover;
+    text-align: center;
+}
+
+#Myhead {
+    margin-left: 225px;
+    color: aqua;
+    font-family: Cookie;
+    font-size:47px;
+}
+
+body {
+    background-image: url("https://imgs.search.brave.com/bQzWlcIAIAgjon-psHlW7KiPlkVnC2C4RUmH_Y9tvlw/rs:fit:1200:980:1/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvcHJl/dmlld3MvMDAwLzE1/My81NjYvbGFyZ2Vf/MngvdHJhaW4taW4t/dGhlLXN1bnNldC1p/bGx1c3RyYXRpb24t/ZnJlZS12ZWN0b3Iu/anBn");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+#quote {
+    color: aliceblue;
+    width: 445px;
+    font-size: 20px;
+    font-family: Lobster;
+    margin-left: 363px;
+    margin-bottom: 50px;
+    margin-top: -203px;
+}
+
+
+#container {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    margin-left: 372px;
+    margin-top: 144px;
+}
+
+#container p {
+    margin-left: 1em;
+}
+
+#map_icon {
+    height: 50px;
+    margin-left: 622px;
+    border-radius: 5px;
+}
+
+#Submit{
+    margin-top: 15px;
+    font-family: Lobster;
+    border: 3px solid red;
+    border-radius: 5px;
+}
