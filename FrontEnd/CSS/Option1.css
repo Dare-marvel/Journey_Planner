@@ -3,9 +3,6 @@
     padding: 0;
 }
 
-html,body{
-    size: 120%;
-}
 .font-effect-shadow-multiple {
     font-family: "Trirong", serif;
 }
@@ -64,7 +61,8 @@ h1 {
     box-shadow: 10px 10px 5px rgb(126, 126, 126);
     padding: 9px;
     height: 352px;
-    margin-left: 793px;
+    margin-left: 872.4px;
+    margin-right: 79px;
     margin-bottom: 115px;
     margin-top: -682px;
     width: 246px;
