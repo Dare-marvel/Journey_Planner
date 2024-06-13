@@ -1,35 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Box, Button, Card, CardBody, CardHeader, Divider, Heading, Input, Text } from "@chakra-ui/react"
+import { stations } from "../js/mumbaiLocal"
+import { useEffect, useState } from "react"
 import './App.css'
-
+import { Retrieve } from "../js/djikstra";
 function App() {
-  const [count, setCount] = useState(0)
+    const [src, setSrc] = useState('');
+    const [des, setDes] = useState('');
+    const [route, setRoute] = useState(null);
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    useEffect(() => console.log(route), [route]);
+
+    return (
+        <Card maxW="md" mx="auto">
+            <CardHeader>
+                <Heading>
+                    Train Route
+                </Heading>
+            </CardHeader>
+            <Divider />
+            <CardBody>
+                <datalist id="list">
+                    {stations.map((e, i) => <option key={i} value={e["Station"]}>{e["Station"]} ({e["Station Code"]})</option>)}
+                </datalist>
+                <label htmlFor="src">Source Station:</label>
+                <Input mb={4} id="src" list="list" placeholder="Source Station" value={src} onChange={(e) => setSrc(e.target.value)} />
+                <label htmlFor="src">Destination Station:</label>
+                <Input id="des" list="list" placeholder="Destination Station" value={des} onChange={(e) => setDes(e.target.value)} />
+                <Button mt={4} onClick={() => setRoute(Retrieve(src, des))}>Get Route</Button>
+                <Divider my={4} />
+                {route && <Box>
+                    <Heading size="md">Path: </Heading>
+                    <Text>{route.comp_path}</Text>
+                    <Heading size="md">Time: </Heading>
+                    <Text>{route.time_taken}</Text>
+                </Box>}
+            </CardBody>
+        </Card>
+    )
 }
 
 export default App
