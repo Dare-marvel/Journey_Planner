@@ -1,12 +1,15 @@
-import { Flex, Heading, Image } from "@chakra-ui/react";
+import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 
 export default function Map() {
     return (
-        <Flex h='100dvh' w='100dvw' flexDirection='column' align='center' justify='center'>
-            <Heading my={2}>
-                Railway Map
-            </Heading>
-            <Image src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Mumbai_suburban_rail_map.svg" h='100%' w='100%' />
-        </Flex>
+        <>
+            <Box position='fixed' zIndex={-10} h='100dvh' w='100dvw' backgroundImage='url(https://upload.wikimedia.org/wikipedia/commons/5/5e/Mumbai_suburban_rail_map.svg)' filter='blur(10px)' backgroundSize='cover' backgroundPosition='center' backgroundRepeat='no-repeat' ></Box>
+            <Flex flexDirection='column' align='center' justify='center'>
+                <Heading my={2}>
+                    Railway Map
+                </Heading>
+                <Image src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Mumbai_suburban_rail_map.svg" maxH='100vh' maxW='100vw' />
+            </Flex>
+        </>
     )
 }
