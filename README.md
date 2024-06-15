@@ -1,5 +1,4 @@
-# [View the site here](https://dare-marvel.github.io/Journey_Planner/)
-
-* Clone the repo 
-* Open with VS code or any other text editor
-* Open the index.html file with live server
+* Clone the project
+* Install all the required packages in client and server using `npm i
+* Start the server with `npm run start-dev
+* Start the client with `npm run dev`
