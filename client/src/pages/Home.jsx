@@ -1,24 +1,64 @@
-import { Box, Button, Card, Flex } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
-import mumbaiLocal from '../../../ProjectImages/MumbaiLocal.jpg';
+import {
+  Container,
+  Box,
+  Text,
+  Tab,
+  TabList,
+  TabPanel,
+  TabPanels,
+  Tabs,
+} from "@chakra-ui/react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function Home() {
-    return (
-        <>
-            <Box position='fixed' zIndex={-10} h='100dvh' w='100dvw' backgroundImage={mumbaiLocal} backgroundSize='cover' backgroundPosition='center' backgroundRepeat='no-repeat' ></Box>
-            <Flex h='100dvh' w='100dvw' align='center' justify='center'>
-                <Card backgroundColor='rgba(255,255,255,0.5)' backdropFilter='blur(2px)' maxW='md' p={4} display='flex' flexDir='column' gap={4}>
-                    <Button backgroundColor='rgba(255,255,255,0.66)' _hover={{ backgroundColor: 'white', color: 'black' }}>
-                        <Link to='/list'>List of All Stations</Link>
-                    </Button>
-                    <Button backgroundColor='rgba(255,255,255,0.66)' _hover={{ backgroundColor: 'white', color: 'black' }}>
-                        <Link to='/shortestpath'>Shortest Path</Link>
-                    </Button>
-                    <Button backgroundColor='rgba(255,255,255,0.66)' _hover={{ backgroundColor: 'white', color: 'black' }}>
-                        <Link to='/map'>Railway Map</Link>
-                    </Button>
-                </Card>
-            </Flex>
-        </>
-    )
-}
+import { Login, Signup } from "../components";
+
+const Home = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const userInfo = JSON.parse(localStorage.getItem("userInfo"));
+
+    if (!userInfo) {
+      navigate("/");
+    }
+  }, [navigate]);
+
+  return (
+    <Container maxWidth="xl">
+      <Box
+        d="flex"
+        justifyContent="center"
+        p={3}
+        bg="white"
+        w="100%"
+        m="40px 0 15px 0"
+        borderRadius="lg"
+        borderWidth="1px"
+      >
+        <Text fontSize="4xl" fontFamily="Work sans" textAlign="center">
+          Journey Planner
+        </Text>
+      </Box>
+
+      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+        <Tabs isFitted variant="soft-rounded">
+          <TabList mb="1em">
+            <Tab>Login</Tab>
+            <Tab>Sign Up</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Login />
+            </TabPanel>
+            <TabPanel>
+              <Signup />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Box>
+    </Container>
+  );
+};
+
+export default Home;
