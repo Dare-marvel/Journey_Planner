@@ -26,7 +26,7 @@ export function Navbar() {
     //     </Flex>
     // )
     return (
-        <Flex as='nav' position='sticky' top={0} zIndex={10} backgroundColor='white' px={4} py={2} justifyContent='space-between' alignItems='center' wrap='wrap' >
+        <Flex as='nav' borderBottom='1px solid black' position='sticky' top={0} zIndex={10} backgroundColor='white' px={4} py={2} justifyContent='space-between' alignItems='center' wrap='wrap' >
             <Heading size='md' py={2}>Journey Planner</Heading>
             <Button display={{ base: 'block', md: 'none' }} onClick={() => setOpen(o => !o)}>
                 {open ?
