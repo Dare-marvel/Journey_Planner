@@ -7,6 +7,7 @@ import Map from './pages/Map'
 import { Home, Chat } from "./pages";
 
 import { ChatState } from "./context/ChatProvider";
+import ExpenseTracker from './pages/ExpenseTracker'
 
 function App() {
     const { user } = ChatState();
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/shortestpath' element={<ShortestPath />} />
                 <Route path='/list' element={<StationList />} />
                 <Route path='/map' element={<Map />} />
+                <Route path='/tracker' element={<ExpenseTracker />} />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>}
         </>
