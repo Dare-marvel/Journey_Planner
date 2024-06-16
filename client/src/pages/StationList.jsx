@@ -1,9 +1,11 @@
 import { Box, Card, Divider, Flex, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 import trains from '../../../ProjectImages/TwoTrains.jpg'
+import { Navbar } from "../components/Navbar";
 
 export default function StationList() {
     return (
         <>
+            <Navbar />
             <Box position='fixed' zIndex={-10} h='100dvh' w='100dvw' backgroundImage={trains} backgroundSize='cover' backgroundPosition='center' backgroundRepeat='no-repeat' ></Box>
             {/* <Box h='100dvh' w='100dvw' ></Box> */}
             <Flex wrap='wrap' justify='center'>

@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 import ShortestPath from './pages/ShortestPath'
 import Menu from './pages/Menu'
 import StationList from './pages/StationList'

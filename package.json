@@ -4,7 +4,9 @@
     "description": "* Clone the repo \r * Open with VS code or any other text editor\r * Open the index.html file with live server",
     "main": "index.js",
     "scripts": {
-        "dev": "npm run dev --prefix ./client"
+        "i-deps": "npm i --prefix ./client && npm i --prefix ./server",
+        "front": "npm run dev --prefix ./client",
+        "back": "npm run start-dev --prefix ./server"
     },
     "keywords": [],
     "author": "",
