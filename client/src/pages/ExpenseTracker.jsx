@@ -3,6 +3,7 @@ import { useState } from "react";
 import NewExpense from "../components/NewExpense/NewExpense";
 import Expenses from "../components/Expenses/Expenses";
 import { Flex } from "@chakra-ui/react";
+import { Navbar } from "../components/Navbar";
 
 const DUMMY_EXPENSES = [
     {
@@ -36,10 +37,13 @@ const ExpenseTracker = () => {
 
     return (
 
-        <Flex direction='column' gap={4} justifyContent='center' alignItems='center' className="expense-tracker-container">
-            <NewExpense onAddExpense={addExpenseHandler} />
-            <Expenses items={expenses} />
-        </Flex>
+        <>
+            <Navbar />
+            <Flex direction='column' gap={4} justifyContent='center' alignItems='center' className="expense-tracker-container">
+                <NewExpense onAddExpense={addExpenseHandler} />
+                <Expenses items={expenses} />
+            </Flex>
+        </>
     );
 };
 
