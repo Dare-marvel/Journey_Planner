@@ -62,6 +62,7 @@ export function Navbar() {
                     <ChakraLink as={ReactLink} to='/map' px={4} py={2} backgroundColor={location.pathname == '/map' ? 'rgba(0,0,0,0.1)' : ''} >Map</ChakraLink>
                     <ChakraLink as={ReactLink} to='/chats' px={4} py={2} backgroundColor={location.pathname == '/chats' ? 'rgba(0,0,0,0.1)' : ''} >Chats</ChakraLink>
                     <ChakraLink as={ReactLink} to='/tracker' px={4} py={2} backgroundColor={location.pathname == '/tracker' ? 'rgba(0,0,0,0.1)' : ''} >Track Expenses</ChakraLink>
+                    <ChakraLink as={ReactLink} to='/weather' px={4} py={2} backgroundColor={location.pathname == '/weather' ? 'rgba(0,0,0,0.1)' : ''} >Weather</ChakraLink>
                     {user && <Button onClick={logout}>Logout</Button>}
                 </Stack>
             </Box>
