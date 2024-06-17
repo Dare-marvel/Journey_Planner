@@ -6,7 +6,7 @@ import { Navbar } from "../components/Navbar";
 export default function Menu() {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Box position='fixed' zIndex={-10} h='100dvh' w='100dvw' backgroundImage={mumbaiLocal} backgroundSize='cover' backgroundPosition='center' backgroundRepeat='no-repeat' ></Box>
             <Flex h='100dvh' w='100dvw' align='center' justify='center'>
                 <Card backgroundColor='rgba(255,255,255,0.5)' backdropFilter='blur(2px)' maxW='md' p={4} display='flex' flexDir='column' gap={4}>

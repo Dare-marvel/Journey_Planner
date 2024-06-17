@@ -37,7 +37,7 @@ const Home = () => {
         borderWidth="1px"
       >
         <Text fontSize="4xl" fontFamily="Work sans" textAlign="center">
-          Journey Planner
+          PATHCRAFTER
         </Text>
       </Box>
 

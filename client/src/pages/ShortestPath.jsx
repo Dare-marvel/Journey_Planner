@@ -13,7 +13,7 @@ export default function ShortestPath() {
 
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Box position='fixed' zIndex={-10} h='100dvh' w='100dvw' backgroundImage={darkCity} backgroundSize='cover' backgroundPosition='center' backgroundRepeat='no-repeat' ></Box>
             <Flex h='100dvh' w='100dvw' align='center' justify='center'>
                 <Card backgroundColor='rgba(255,255,255,0.75)' backdropFilter='blur(2px)' maxW="md" mx="auto">

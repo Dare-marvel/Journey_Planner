@@ -27,7 +27,7 @@ export function Navbar() {
     // )
     return (
         <Flex as='nav' borderBottom='1px solid black' position='sticky' top={0} zIndex={10} backgroundColor='white' px={4} py={2} justifyContent='space-between' alignItems='center' wrap='wrap' >
-            <Heading size='md' py={2}>Journey Planner</Heading>
+            <Heading size='md' py={2}>PATHCRAFTER</Heading>
             <Button display={{ base: 'block', md: 'none' }} onClick={() => setOpen(o => !o)}>
                 {open ?
                     <svg width="20px" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">

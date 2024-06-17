@@ -38,7 +38,7 @@ const ExpenseTracker = () => {
     return (
 
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Flex direction='column' gap={4} justifyContent='center' alignItems='center' className="expense-tracker-container">
                 <NewExpense onAddExpense={addExpenseHandler} />
                 <Expenses items={expenses} />

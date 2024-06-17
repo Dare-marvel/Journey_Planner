@@ -11,7 +11,6 @@ const Chat = () => {
 
     return (
         <div style={{ width: "100%" }}>
-            <Navbar />
             {user && <SideDrawer />}
             <Box
                 display="flex"

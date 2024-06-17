@@ -8,6 +8,7 @@ import { Home, Chat } from "./pages";
 
 import { ChatState } from "./context/ChatProvider";
 import ExpenseTracker from './pages/ExpenseTracker'
+import { Navbar } from './components/Navbar'
 
 function App() {
     const { user } = ChatState();
@@ -17,16 +18,20 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
             </Routes>
-            {user && <Routes>
+            {user &&
+                (<div>
+                    <Navbar />
+                    <Routes>
 
-                <Route path="/chats" element={<Chat />} />
-                <Route path='/menu' element={<Menu />} />
-                <Route path='/shortestpath' element={<ShortestPath />} />
-                <Route path='/list' element={<StationList />} />
-                <Route path='/map' element={<Map />} />
-                <Route path='/tracker' element={<ExpenseTracker />} />
-                <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>}
+                        <Route path="/chats" element={<Chat />} />
+                        <Route path='/menu' element={<Menu />} />
+                        <Route path='/shortestpath' element={<ShortestPath />} />
+                        <Route path='/list' element={<StationList />} />
+                        <Route path='/map' element={<Map />} />
+                        <Route path='/tracker' element={<ExpenseTracker />} />
+                        <Route path="*" element={<Navigate to="/" replace />} />
+                    </Routes>
+                </div>)}
         </>
     )
 }
