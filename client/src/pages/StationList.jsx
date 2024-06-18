@@ -1,6 +1,6 @@
 import { Box, Card, Divider, Flex, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 import trains from '../../../ProjectImages/TwoTrains.jpg'
-import { Navbar } from "../components/Navbar";
+// import { Navbar } from "../components/Navbar";
 
 export default function StationList() {
     return (
