@@ -1,26 +1,30 @@
 const { registerUser, authUser, allUsers } = require("./userControllers");
 const {
-  accessChat,
-  fetchChats,
-  createGroupChat,
-  renameGroup,
-  addToGroup,
-  removeFromGroup,
+    accessChat,
+    fetchChats,
+    createGroupChat,
+    renameGroup,
+    addToGroup,
+    removeFromGroup,
 } = require("./chatControllers");
 const { sendMessage, allMessages } = require("./messageControllers");
+const { addExpense, getExpenses } = require("./expenseControllers");
 
 module.exports = {
-  registerUser,
-  authUser,
-  allUsers,
+    registerUser,
+    authUser,
+    allUsers,
 
-  accessChat,
-  fetchChats,
-  createGroupChat,
-  renameGroup,
-  addToGroup,
-  removeFromGroup,
+    accessChat,
+    fetchChats,
+    createGroupChat,
+    renameGroup,
+    addToGroup,
+    removeFromGroup,
 
-  sendMessage,
-  allMessages,
+    sendMessage,
+    allMessages,
+
+    addExpense,
+    getExpenses
 };

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import NewExpense from "../components/NewExpense/NewExpense";
 import Expenses from "../components/Expenses/Expenses";
@@ -35,12 +35,28 @@ const DUMMY_EXPENSES = [
     },
 ];
 const ExpenseTracker = () => {
-    const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+    const [expenses, setExpenses] = useState([]);
+    const { token } = localStorage.getItem('userInfo')
+    useEffect(() => {
+        (async () => {
+            const response = await fetch('/api/expense', { headers: { Authorization: `Bearer ${token}` } })
+            const json = await response.json();
+            setExpenses(json);
+        })()
+    }, [token]);
 
-    const addExpenseHandler = (expense) => {
-        setExpenses((prevExpenses) => {
-            return [expense, ...prevExpenses];
+    const addExpenseHandler = async (expense) => {
+        const response = await fetch('/api/expense', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(expense)
         });
+        const json = await response.json();
+        if (response.ok)
+            setExpenses(e => [...e, json]);
     };
 
     return (
