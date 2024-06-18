@@ -2,6 +2,7 @@ import { Box, Button, Card, Flex, Heading, Icon, Image, Input, Text } from "@cha
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDroplet, faEye, faGauge, faMoon, faSun, faTemperature4, faWind } from '@fortawesome/free-solid-svg-icons';
+import darkCity from '../../../ProjectImages/Darkcity.jpg';
 
 const api_key = import.meta.env.VITE_WEATHER_API;
 const urls = {
@@ -110,102 +111,108 @@ export default function Weather() {
     const rise = new Date(data.current.sys.sunrise * 1000)
     const set = new Date(data.current.sys.sunset * 1000)
 
-    return <Flex p={4} gap={4} direction='column' textAlign='center' w='100%' align='center'>
-        <Flex as={Card} p={4} gap={4} direction='column'>
-            <Flex direction='row' gap={4} >
-                <Input placeholder='Search City' value={query} onChange={(e) => setQuery(e.target.value)} />
-                <Button onClick={search}>Search</Button>
-            </Flex>
-            {coordList.length > 0 && query !== '' && <Flex direction='column' gap={2}>
-                {coordList.map((e, i) => <Button onClick={() => setLocation(e)} key={i} p={2}>
-                    {e.name}, {e.state}, {e.country}
-                </Button>)}
-            </Flex>}
-        </Flex>
-        <Card p={4}>
-            {currLocation}
-        </Card>
-        <Flex direction='column' justify='center' w='100%' align='center' gap={4}>
-            <Flex direction='row' gap={4} w='100%' justify='center'>
-                <Card as={Flex} direction='column' justify='center' p={4}>
-                    <Flex w='100%' justify='center' gap={4} align='center'>
-                        <Image src={`http://openweathermap.org/img/w/${data.current.weather[0].icon}.png`}></Image>
-                        <Heading fontSize='2xl'>
-                            {data.current.weather[0].main}
-                        </Heading>
+    return (
+        <>
+            <Box position='fixed' zIndex={-10} h='100dvh' w='100dvw' backgroundImage={darkCity} backgroundSize='cover' backgroundPosition='center' backgroundRepeat='no-repeat' ></Box>
+            <Box position='fixed' zIndex={-9} h='100dvh' w='100dvw' backdropFilter='blur(10px)' ></Box>
+            <Flex p={4} gap={4} direction='column' textAlign='center' w='100%' align='center'>
+                <Flex as={Card} p={4} gap={4} direction='column'>
+                    <Flex direction='row' gap={4} >
+                        <Input placeholder='Search City' value={query} onChange={(e) => setQuery(e.target.value)} />
+                        <Button onClick={search}>Search</Button>
                     </Flex>
-                    <Text>{data.current.weather[0].description}</Text>
+                    {coordList.length > 0 && query !== '' && <Flex direction='column' gap={2}>
+                        {coordList.map((e, i) => <Button onClick={() => setLocation(e)} key={i} p={2}>
+                            {e.name}, {e.state}, {e.country}
+                        </Button>)}
+                    </Flex>}
+                </Flex>
+                <Card p={4}>
+                    {currLocation}
                 </Card>
-                <Card as={Flex} direction='column' justify='center' p={4} gap={2}>
-                    <Flex w='100%' justify='center' gap={4} align='center'>
-                        <Icon as={FontAwesomeIcon} icon={faTemperature4} w='32px' h='32px' ></Icon>
-                        <Heading fontSize='2xl'>
-                            {celsius(data.current.main.temp)}C
-                        </Heading>
+                <Flex direction='column' justify='center' w='100%' align='center' gap={4}>
+                    <Flex direction='row' gap={4} w='100%' justify='center'>
+                        <Card as={Flex} direction='column' justify='center' p={4}>
+                            <Flex w='100%' justify='center' gap={4} align='center'>
+                                <Image src={`http://openweathermap.org/img/w/${data.current.weather[0].icon}.png`}></Image>
+                                <Heading fontSize='2xl'>
+                                    {data.current.weather[0].main}
+                                </Heading>
+                            </Flex>
+                            <Text>{data.current.weather[0].description}</Text>
+                        </Card>
+                        <Card as={Flex} direction='column' justify='center' p={4} gap={2}>
+                            <Flex w='100%' justify='center' gap={4} align='center'>
+                                <Icon as={FontAwesomeIcon} icon={faTemperature4} w='32px' h='32px' ></Icon>
+                                <Heading fontSize='2xl'>
+                                    {celsius(data.current.main.temp)}C
+                                </Heading>
+                            </Flex>
+                            <Text>Feels like {celsius(data.current.main.feels_like)}C</Text>
+                        </Card>
                     </Flex>
-                    <Text>Feels like {celsius(data.current.main.feels_like)}C</Text>
-                </Card>
-            </Flex>
-            <Flex direction='row' wrap='wrap' justify='center' gap={4}>
-                <Card as={Flex} direction='row' wrap='wrap' p={4} gap={6} justify='center' align='center'>
-                    <Box>
-                        <Text mb={2}>Pressure</Text>
-                        <Flex gap={2}>
-                            <Icon as={FontAwesomeIcon} icon={faGauge} w='32px' h='32px' ></Icon>
-                            <Heading fontSize='2xl'>{data.current.main.pressure}hPa</Heading>
-                        </Flex>
-                    </Box>
-                    <Box>
-                        <Text mb={2}>Humidity</Text>
-                        <Flex gap={2}>
-                            <Icon as={FontAwesomeIcon} icon={faDroplet} w='32px' h='32px' ></Icon>
-                            <Heading fontSize='2xl'>{data.current.main.humidity}%</Heading>
-                        </Flex>
-                    </Box>
-                    <Box>
-                        <Text mb={2}>Visibility</Text>
-                        <Flex gap={2}>
-                            <Icon as={FontAwesomeIcon} icon={faEye} w='32px' h='32px' ></Icon>
-                            <Heading fontSize='2xl'>{Math.round((data.current.visibility / 1000) * 100) / 100}km</Heading>
-                        </Flex>
-                    </Box>
-                </Card>
-                <Card as={Flex} direction='row' wrap='wrap' p={4} gap={6} justify='center' align='center'>
-                    <Box>
-                        <Text mb={2}>Sunrise</Text>
-                        <Flex gap={2} align='center'>
-                            <Icon as={FontAwesomeIcon} icon={faSun} w='32px' h='32px' ></Icon>
-                            <Heading>{rise.toLocaleTimeString()}</Heading>
-                        </Flex>
-                    </Box>
-                    <Box>
-                        <Text mb={2}>Sunset</Text>
-                        <Flex gap={2} align='center'>
-                            <Icon as={FontAwesomeIcon} icon={faMoon} w='32px' h='32px' ></Icon>
-                            <Heading>{set.toLocaleTimeString()}</Heading>
-                        </Flex>
-                    </Box>
-                </Card>
-                <Card as={Flex} direction='row' wrap='wrap' p={4} gap={6} justify='center' align='center'>
-                    <Icon as={FontAwesomeIcon} icon={faWind} w='32px' h='32px' ></Icon>
-                    <Box>
-                        <Text mb={2}>AQI</Text>
-                        <Heading>{data.pollution.list[0].main.aqi}</Heading>
-                    </Box>
-                    <Box>
-                        <Text mb={2}>PM2.5</Text>
-                        <Heading>{data.pollution.list[0].components.pm2_5}</Heading>
-                    </Box>
-                    <Box>
-                        <Text mb={2}>SO2</Text>
-                        <Heading>{data.pollution.list[0].components.so2}</Heading>
-                    </Box>
-                    <Box>
-                        <Text mb={2}>O3</Text>
-                        <Heading>{data.pollution.list[0].components.o3}</Heading>
-                    </Box>
-                </Card>
-            </Flex>
-        </Flex >
-    </Flex >
+                    <Flex direction='row' wrap='wrap' justify='center' gap={4}>
+                        <Card as={Flex} direction='row' wrap='wrap' p={4} gap={6} justify='center' align='center'>
+                            <Box>
+                                <Text mb={2}>Pressure</Text>
+                                <Flex gap={2}>
+                                    <Icon as={FontAwesomeIcon} icon={faGauge} w='32px' h='32px' ></Icon>
+                                    <Heading fontSize='2xl'>{data.current.main.pressure}hPa</Heading>
+                                </Flex>
+                            </Box>
+                            <Box>
+                                <Text mb={2}>Humidity</Text>
+                                <Flex gap={2}>
+                                    <Icon as={FontAwesomeIcon} icon={faDroplet} w='32px' h='32px' ></Icon>
+                                    <Heading fontSize='2xl'>{data.current.main.humidity}%</Heading>
+                                </Flex>
+                            </Box>
+                            <Box>
+                                <Text mb={2}>Visibility</Text>
+                                <Flex gap={2}>
+                                    <Icon as={FontAwesomeIcon} icon={faEye} w='32px' h='32px' ></Icon>
+                                    <Heading fontSize='2xl'>{Math.round((data.current.visibility / 1000) * 100) / 100}km</Heading>
+                                </Flex>
+                            </Box>
+                        </Card>
+                        <Card as={Flex} direction='row' wrap='wrap' p={4} gap={6} justify='center' align='center'>
+                            <Box>
+                                <Text mb={2}>Sunrise</Text>
+                                <Flex gap={2} align='center'>
+                                    <Icon as={FontAwesomeIcon} icon={faSun} w='32px' h='32px' ></Icon>
+                                    <Heading fontSize='2xl'>{rise.toLocaleTimeString()}</Heading>
+                                </Flex>
+                            </Box>
+                            <Box>
+                                <Text mb={2}>Sunset</Text>
+                                <Flex gap={2} align='center'>
+                                    <Icon as={FontAwesomeIcon} icon={faMoon} w='32px' h='32px' ></Icon>
+                                    <Heading fontSize='2xl'>{set.toLocaleTimeString()}</Heading>
+                                </Flex>
+                            </Box>
+                        </Card>
+                        <Card as={Flex} direction='row' wrap='wrap' p={4} gap={6} justify='center' align='center'>
+                            <Icon as={FontAwesomeIcon} icon={faWind} w='32px' h='32px' ></Icon>
+                            <Box>
+                                <Text mb={2}>AQI</Text>
+                                <Heading fontSize='2xl'>{data.pollution.list[0].main.aqi}</Heading>
+                            </Box>
+                            <Box>
+                                <Text mb={2}>PM2.5</Text>
+                                <Heading fontSize='2xl'>{data.pollution.list[0].components.pm2_5}</Heading>
+                            </Box>
+                            <Box>
+                                <Text mb={2}>SO2</Text>
+                                <Heading fontSize='2xl'>{data.pollution.list[0].components.so2}</Heading>
+                            </Box>
+                            <Box>
+                                <Text mb={2}>O3</Text>
+                                <Heading fontSize='2xl'>{data.pollution.list[0].components.o3}</Heading>
+                            </Box>
+                        </Card>
+                    </Flex>
+                </Flex >
+            </Flex >
+        </>
+    )
 }

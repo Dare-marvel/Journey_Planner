@@ -5,23 +5,20 @@ import "./Expenses.css";
 import ExpensesList from "./ExpensesList";
 import { Card } from "@chakra-ui/react";
 
-const Expenses = (props) => {
-    const [filteredYear, setFilteredYear] = useState("2020");
+const Expenses = ({ items }) => {
+    const [filteredYear, setFilteredYear] = useState("2022");
+    const [filteredCategory, setFilteredCategory] = useState("All");
 
-    const filterChangeHandler = (selectedYear) => {
-        setFilteredYear(selectedYear);
-    };
-
-    const filteredExpenses = props.items.filter((expense) => {
-        return expense.date.getFullYear().toString() === filteredYear;
-    });
+    const filteredExpenses = items
+        .filter((expense) => expense.date.getFullYear().toString() === filteredYear)
+        .filter((e) => filteredCategory === 'All' ? true : e.category === filteredCategory);
 
 
     return (
         <Card p={4} backgroundColor='rgb(31, 31, 31)' w='50rem' >
             <ExpensesFilter
-                selected={filteredYear}
-                onChangeFilter={filterChangeHandler}
+                setYear={setFilteredYear}
+                setCategory={setFilteredCategory}
             />
             <ExpensesChart expenses={filteredExpenses} />
             <ExpensesList items={filteredExpenses} />

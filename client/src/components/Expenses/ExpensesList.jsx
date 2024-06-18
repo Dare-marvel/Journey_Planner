@@ -9,10 +9,17 @@ const ExpensesList = (props) => {
 
     return (
         <Flex direction='column' gap={4} pt={4}>
+            <Flex direction='row' color='white' textAlign='center'>
+                <Text flexGrow={1}>Date</Text>
+                <Text flexGrow={1}>Title</Text>
+                <Text flexGrow={1}>Category</Text>
+                <Text flexGrow={1}>Amount</Text>
+            </Flex>
             {props.items.map((expense) => (
                 <ExpenseItem
                     key={expense.id}
                     title={expense.title}
+                    category={expense.category}
                     amount={expense.amount}
                     date={expense.date}
                 />

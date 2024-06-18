@@ -1,12 +1,11 @@
 import { useState } from 'react';
-
-import './ExpenseForm.css';
-import { Box, Button, FormControl, FormLabel, Input } from '@chakra-ui/react';
+import { Box, Button, FormControl, FormLabel, Input, Select } from '@chakra-ui/react';
 
 const ExpenseForm = (props) => {
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
     const [enteredDate, setEnteredDate] = useState('');
+    const [category, setCategory] = useState('Other');
     // const [userInput, setUserInput] = useState({
     //   enteredTitle: '',
     //   enteredAmount: '',
@@ -45,6 +44,7 @@ const ExpenseForm = (props) => {
 
         const expenseData = {
             title: enteredTitle,
+            category,
             amount: +enteredAmount,
             date: new Date(enteredDate),
         };
@@ -53,6 +53,7 @@ const ExpenseForm = (props) => {
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
+        setCategory('Other');
     };
 
     return (
@@ -65,7 +66,20 @@ const ExpenseForm = (props) => {
                         type='text'
                         value={enteredTitle}
                         onChange={titleChangeHandler}
+                        required
                     />
+                </Box>
+                <Box>
+                    <FormLabel fontWeight='bold' >Category</FormLabel>
+                    <Select value={category} onChange={(e) => setCategory(e.target.value)} backgroundColor='white' required>
+                        <option value="Travel">Travel</option>
+                        <option value="Recreational">Recreational</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Bills">Bills</option>
+                        <option value="Rent">Rent</option>
+                        <option value="Food">Food</option>
+                        <option value="Other">Other</option>
+                    </Select>
                 </Box>
                 <Box>
                     <FormLabel fontWeight='bold'>Amount</FormLabel>
@@ -76,9 +90,10 @@ const ExpenseForm = (props) => {
                         step='0.01'
                         value={enteredAmount}
                         onChange={amountChangeHandler}
+                        required
                     />
                 </Box>
-                <Box className='new-expense__control'>
+                <Box>
                     <FormLabel fontWeight='bold'>Date</FormLabel>
                     <Input
                         backgroundColor='white'
@@ -87,6 +102,7 @@ const ExpenseForm = (props) => {
                         max='2022-12-31'
                         value={enteredDate}
                         onChange={dateChangeHandler}
+                        required
                     />
                 </Box>
             </FormControl>

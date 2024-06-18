@@ -3,7 +3,6 @@ import { useEffect, useState } from "react"
 import { stations } from "../../js/mumbaiLocal";
 import { Retrieve } from "../../js/djikstra";
 import darkCity from '../../../ProjectImages/Darkcity.jpg';
-import { Navbar } from "../components/Navbar";
 export default function ShortestPath() {
     const [src, setSrc] = useState('');
     const [des, setDes] = useState('');
