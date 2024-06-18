@@ -165,9 +165,15 @@ g.addVertex("Kopar");
 g.addVertex("Dombivali");
 g.addVertex("Thakurli");
 g.addVertex("Kalyan");
-g.addVertex("Ulhas Nagar");
+g.addVertex("Vithalwadi")
+g.addVertex("UlhasNagar");
 g.addVertex("Ambernath");
 g.addVertex("Badlapur");
+g.addVertex("Vangani")
+g.addVertex("Shelu")
+g.addVertex("Neral")
+g.addVertex("BhivpuriRoad")
+g.addVertex("Palasdhari")
 g.addVertex("Karjat");
 g.addVertex("Khopoli");
 g.addVertex("Titwala");
