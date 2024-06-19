@@ -10,7 +10,7 @@ const Expenses = ({ items }) => {
     const [filteredCategory, setFilteredCategory] = useState("All");
 
     const filteredExpenses = items
-        .filter((expense) => expense.date.getFullYear().toString() === filteredYear)
+        .filter((e) => e.date.getFullYear().toString() === filteredYear)
         .filter((e) => filteredCategory === 'All' ? true : e.category === filteredCategory);
 
 

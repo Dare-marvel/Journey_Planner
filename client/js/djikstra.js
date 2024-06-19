@@ -166,7 +166,7 @@ g.addVertex("Dombivali");
 g.addVertex("Thakurli");
 g.addVertex("Kalyan");
 g.addVertex("Vithalwadi")
-g.addVertex("UlhasNagar");
+g.addVertex("Ulhas Nagar");
 g.addVertex("Ambernath");
 g.addVertex("Badlapur");
 g.addVertex("Vangani")

@@ -15,9 +15,9 @@ const ExpensesList = (props) => {
                 <Text flexGrow={1}>Category</Text>
                 <Text flexGrow={1}>Amount</Text>
             </Flex>
-            {props.items.map((expense) => (
+            {props.items.map((expense, i) => (
                 <ExpenseItem
-                    key={expense.id}
+                    key={i}
                     title={expense.title}
                     category={expense.category}
                     amount={expense.amount}

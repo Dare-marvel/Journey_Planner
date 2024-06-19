@@ -12,10 +12,7 @@ const NewExpense = (props) => {
     }
 
     const saveExpenseDataHandler = (enteredExpenseData) => {
-        const expenseData = {
-            ...enteredExpenseData
-        };
-        props.onAddExpense(expenseData);
+        props.onAddExpense(enteredExpenseData);
         setEditing(false);
     };
 

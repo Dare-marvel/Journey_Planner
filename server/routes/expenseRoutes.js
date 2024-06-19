@@ -5,7 +5,7 @@ const { getExpenses, addExpense } = require("../controllers/expenseControllers")
 
 const router = express.Router();
 
-router.get("/", getExpenses)
-router.post("/", addExpense);
+router.get("/", protect, getExpenses)
+router.post("/", protect, addExpense);
 
 module.exports = router;

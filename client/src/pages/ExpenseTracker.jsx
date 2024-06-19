@@ -36,12 +36,19 @@ const DUMMY_EXPENSES = [
 ];
 const ExpenseTracker = () => {
     const [expenses, setExpenses] = useState([]);
-    const { token } = localStorage.getItem('userInfo')
+    const { token } = JSON.parse(localStorage.getItem('userInfo'))
+    console.log(expenses);
     useEffect(() => {
         (async () => {
             const response = await fetch('/api/expense', { headers: { Authorization: `Bearer ${token}` } })
             const json = await response.json();
-            setExpenses(json);
+            if (response.ok)
+                setExpenses(json.map((e) => {
+                    let expense = { ...e };
+                    expense.date = new Date(e.date);
+                    expense.amount = e.amount.$numberDecimal;
+                    return expense;
+                }));
         })()
     }, [token]);
 

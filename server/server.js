@@ -11,6 +11,10 @@ app.use(express.json()); // Accept JSON data
 dotenv.config({ path: path.join(__dirname, "./.env") }); // Specify a custom path if your file containing environment variables is located elsewhere
 connectToMongoDB(); // Connect to Database
 
+app.use('*', (req, res, next) => {
+    console.log(req.url, req.method)
+    next();
+})
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
