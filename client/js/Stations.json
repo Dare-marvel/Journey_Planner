@@ -1,0 +1,917 @@
+[
+  {
+    "Id": 1,
+    "Name": "Churchgate",
+    "Line": "Western"
+  },
+  {
+    "Id": 2,
+    "Name": "Marine Lines",
+    "Line": "Western"
+  },
+  {
+    "Id": 3,
+    "Name": "Charni Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 4,
+    "Name": "Grant Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 5,
+    "Name": "Mumbai Central",
+    "Line": "Western"
+  },
+  {
+    "Id": 6,
+    "Name": "Mahalaxmi",
+    "Line": "Western"
+  },
+  {
+    "Id": 7,
+    "Name": "Lower Parel",
+    "Line": "Western"
+  },
+  {
+    "Id": 8,
+    "Name": "Prabhadevi",
+    "Line": "Western"
+  },
+  {
+    "Id": 9,
+    "Name": "Dadar",
+    "Line": "Western"
+  },
+  {
+    "Id": 10,
+    "Name": "Matunga Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 11,
+    "Name": "Mahim",
+    "Line": "Western"
+  },
+  {
+    "Id": 12,
+    "Name": "Bandra",
+    "Line": "Western"
+  },
+  {
+    "Id": 13,
+    "Name": "Khar Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 14,
+    "Name": "Santacruz",
+    "Line": "Western"
+  },
+  {
+    "Id": 15,
+    "Name": "Ville Parle",
+    "Line": "Western"
+  },
+  {
+    "Id": 16,
+    "Name": "Andheri",
+    "Line": "Western"
+  },
+  {
+    "Id": 17,
+    "Name": "Jogeshwari",
+    "Line": "Western"
+  },
+  {
+    "Id": 18,
+    "Name": "Ram Mandir",
+    "Line": "Western"
+  },
+  {
+    "Id": 19,
+    "Name": "Goregaon",
+    "Line": "Western"
+  },
+  {
+    "Id": 20,
+    "Name": "Malad",
+    "Line": "Western"
+  },
+  {
+    "Id": 21,
+    "Name": "Kandivali",
+    "Line": "Western"
+  },
+  {
+    "Id": 22,
+    "Name": "Borivali",
+    "Line": "Western"
+  },
+  {
+    "Id": 23,
+    "Name": "Dahisar",
+    "Line": "Western"
+  },
+  {
+    "Id": 24,
+    "Name": "Mira Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 25,
+    "Name": "Bhayandar",
+    "Line": "Western"
+  },
+  {
+    "Id": 26,
+    "Name": "Naigaon",
+    "Line": "Western"
+  },
+  {
+    "Id": 27,
+    "Name": "Vasai Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 28,
+    "Name": "Nallasopara",
+    "Line": "Western"
+  },
+  {
+    "Id": 29,
+    "Name": "Virar",
+    "Line": "Western"
+  },
+  {
+    "Id": 30,
+    "Name": "Vaitarna",
+    "Line": "Western"
+  },
+  {
+    "Id": 31,
+    "Name": "Saphale",
+    "Line": "Western"
+  },
+  {
+    "Id": 32,
+    "Name": "Kelve Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 33,
+    "Name": "Palghar",
+    "Line": "Western"
+  },
+  {
+    "Id": 34,
+    "Name": "Umroli",
+    "Line": "Western"
+  },
+  {
+    "Id": 35,
+    "Name": "Boisar",
+    "Line": "Western"
+  },
+  {
+    "Id": 36,
+    "Name": "Vangaon",
+    "Line": "Western"
+  },
+  {
+    "Id": 37,
+    "Name": "Dahanu Road",
+    "Line": "Western"
+  },
+  {
+    "Id": 38,
+    "Name": "Chattrapati Shivaji Maharaj Terminus",
+    "Line": "Central"
+  },
+  {
+    "Id": 39,
+    "Name": "Masjid Bunder",
+    "Line": "Central"
+  },
+  {
+    "Id": 40,
+    "Name": "Sandhurst Road",
+    "Line": "Central"
+  },
+  {
+    "Id": 41,
+    "Name": "Byculla",
+    "Line": "Central"
+  },
+  {
+    "Id": 42,
+    "Name": "Chinchpokali",
+    "Line": "Central"
+  },
+  {
+    "Id": 43,
+    "Name": "Currey Road",
+    "Line": "Central"
+  },
+  {
+    "Id": 44,
+    "Name": "Parel",
+    "Line": "Central"
+  },
+  {
+    "Id": 45,
+    "Name": "Dadar",
+    "Line": "Central"
+  },
+  {
+    "Id": 46,
+    "Name": "Matunga",
+    "Line": "Central"
+  },
+  {
+    "Id": 47,
+    "Name": "Sion",
+    "Line": "Central"
+  },
+  {
+    "Id": 48,
+    "Name": "Kurla",
+    "Line": "Central"
+  },
+  {
+    "Id": 49,
+    "Name": "Vidya Vihar",
+    "Line": "Central"
+  },
+  {
+    "Id": 50,
+    "Name": "Ghatkopar",
+    "Line": "Central"
+  },
+  {
+    "Id": 51,
+    "Name": "Vikhroli",
+    "Line": "Central"
+  },
+  {
+    "Id": 52,
+    "Name": "Kanjur Marg",
+    "Line": "Central"
+  },
+  {
+    "Id": 53,
+    "Name": "Bhandup",
+    "Line": "Central"
+  },
+  {
+    "Id": 54,
+    "Name": "Nahur",
+    "Line": "Central"
+  },
+  {
+    "Id": 55,
+    "Name": "Mulund",
+    "Line": "Central"
+  },
+  {
+    "Id": 56,
+    "Name": "Thane",
+    "Line": "Central"
+  },
+  {
+    "Id": 57,
+    "Name": "Kalwa",
+    "Line": "Central"
+  },
+  {
+    "Id": 58,
+    "Name": "Mumbra",
+    "Line": "Central"
+  },
+  {
+    "Id": 59,
+    "Name": "Diva",
+    "Line": "Central"
+  },
+  {
+    "Id": 60,
+    "Name": "Kopar",
+    "Line": "Central"
+  },
+  {
+    "Id": 61,
+    "Name": "Dombivali",
+    "Line": "Central"
+  },
+  {
+    "Id": 62,
+    "Name": "Thakurli",
+    "Line": "Central"
+  },
+  {
+    "Id": 63,
+    "Name": "Kalyan",
+    "Line": "Central"
+  },
+  {
+    "Id": 64,
+    "Name": "Vitthalvadi",
+    "Line": "Central"
+  },
+  {
+    "Id": 65,
+    "Name": "Ulhas Nagar",
+    "Line": "Central"
+  },
+  {
+    "Id": 66,
+    "Name": "Ambernath",
+    "Line": "Central"
+  },
+  {
+    "Id": 67,
+    "Name": "Badlapur",
+    "Line": "Central"
+  },
+  {
+    "Id": 68,
+    "Name": "Vangani",
+    "Line": "Central"
+  },
+  {
+    "Id": 69,
+    "Name": "Shelu",
+    "Line": "Central"
+  },
+  {
+    "Id": 70,
+    "Name": "Neral",
+    "Line": "Central"
+  },
+  {
+    "Id": 71,
+    "Name": "Bhivpuri Road",
+    "Line": "Central"
+  },
+  {
+    "Id": 72,
+    "Name": "Karjat",
+    "Line": "Central"
+  },
+  {
+    "Id": 73,
+    "Name": "Palasdhari",
+    "Line": "Central"
+  },
+  {
+    "Id": 74,
+    "Name": "Kelavali",
+    "Line": "Central"
+  },
+  {
+    "Id": 75,
+    "Name": "Dolavali",
+    "Line": "Central"
+  },
+  {
+    "Id": 76,
+    "Name": "Lowjee",
+    "Line": "Central"
+  },
+  {
+    "Id": 77,
+    "Name": "Khopoli",
+    "Line": "Central"
+  },
+  {
+    "Id": 78,
+    "Name": "Shahad",
+    "Line": "Central"
+  },
+  {
+    "Id": 79,
+    "Name": "Ambivli",
+    "Line": "Central"
+  },
+  {
+    "Id": 80,
+    "Name": "Titwala",
+    "Line": "Central"
+  },
+  {
+    "Id": 81,
+    "Name": "Khadavali",
+    "Line": "Central"
+  },
+  {
+    "Id": 82,
+    "Name": "Vasind",
+    "Line": "Central"
+  },
+  {
+    "Id": 83,
+    "Name": "Asangaon",
+    "Line": "Central"
+  },
+  {
+    "Id": 84,
+    "Name": "Atgaon",
+    "Line": "Central"
+  },
+  {
+    "Id": 85,
+    "Name": "Thansit",
+    "Line": "Central"
+  },
+  {
+    "Id": 86,
+    "Name": "Khardi",
+    "Line": "Central"
+  },
+  {
+    "Id": 87,
+    "Name": "Umbermali",
+    "Line": "Central"
+  },
+  {
+    "Id": 88,
+    "Name": "Kasara",
+    "Line": "Central"
+  },
+  {
+    "Id": 89,
+    "Name": "Chattrapati Shivaji Maharaj Terminus",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 90,
+    "Name": "Masjid Bunder",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 91,
+    "Name": "Sandhurst Road",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 92,
+    "Name": "Dockyard Road",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 93,
+    "Name": "Reay Road",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 94,
+    "Name": "Cotton Green",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 95,
+    "Name": "Sewri",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 96,
+    "Name": "Vadala",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 97,
+    "Name": "King's Circle",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 98,
+    "Name": "Mahim",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 99,
+    "Name": "Bandra",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 100,
+    "Name": "Khar Road",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 101,
+    "Name": "Santacruz",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 102,
+    "Name": "Ville Parle",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 103,
+    "Name": "Andheri",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 104,
+    "Name": "Jogeshwari",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 105,
+    "Name": "Ram Mandir",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 106,
+    "Name": "Goregaon",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 107,
+    "Name": "GTB Nagar",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 108,
+    "Name": "Chunna Bhatti",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 109,
+    "Name": "Kurla",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 110,
+    "Name": "Tilak Nagar",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 111,
+    "Name": "Chembur",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 112,
+    "Name": "Govandi",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 113,
+    "Name": "Mankhurd",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 114,
+    "Name": "Vashi",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 115,
+    "Name": "Sanpada",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 116,
+    "Name": "Juinagar",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 117,
+    "Name": "Nerul",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 118,
+    "Name": "Seawood Darave",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 119,
+    "Name": "Belapur CBD",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 120,
+    "Name": "Khargar",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 121,
+    "Name": "Manasarovar",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 122,
+    "Name": "Khandeshwar",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 123,
+    "Name": "Panvel",
+    "Line": "Harbour"
+  },
+  {
+    "Id": 124,
+    "Name": "Thane",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 125,
+    "Name": "Digha Road",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 126,
+    "Name": "Airoli",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 127,
+    "Name": "Rabale",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 128,
+    "Name": "Ghansoli",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 129,
+    "Name": "Kopar Khairane",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 130,
+    "Name": "Turbhe",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 131,
+    "Name": "Sanpada",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 132,
+    "Name": "Vashi",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 133,
+    "Name": "Juinagar",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 134,
+    "Name": "Nerul",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 135,
+    "Name": "Seawood Darave",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 136,
+    "Name": "Belapur CBD",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 137,
+    "Name": "Khargar",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 138,
+    "Name": "Manasarovar",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 139,
+    "Name": "Khandeshwar",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 140,
+    "Name": "Panvel",
+    "Line": "Thane-Vashi"
+  },
+  {
+    "Id": 141,
+    "Name": "Nerul",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 142,
+    "Name": "Seawood Darave",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 143,
+    "Name": "Belapur CBD",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 144,
+    "Name": "Bhamandongri",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 145,
+    "Name": "Kharkopar",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 146,
+    "Name": "Ranjanpada",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 147,
+    "Name": "Nava Sheva",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 148,
+    "Name": "Dronagiri",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 149,
+    "Name": "Uran",
+    "Line": "Nerul-Uran"
+  },
+  {
+    "Id": 150,
+    "Name": "Neral",
+    "Line": "Neral-Matheran"
+  },
+  {
+    "Id": 151,
+    "Name": "Jumapatti",
+    "Line": "Neral-Matheran"
+  },
+  {
+    "Id": 152,
+    "Name": "Waterpipe",
+    "Line": "Neral-Matheran"
+  },
+  {
+    "Id": 153,
+    "Name": "Aman Lodge",
+    "Line": "Neral-Matheran"
+  },
+  {
+    "Id": 154,
+    "Name": "Matheran",
+    "Line": "Neral-Matheran"
+  },
+  {
+    "Id": 155,
+    "Name": "Ghatkopar",
+    "Line": "Metro"
+  },
+  {
+    "Id": 156,
+    "Name": "Jagruti Nagar",
+    "Line": "Metro"
+  },
+  {
+    "Id": 157,
+    "Name": "Asalpha",
+    "Line": "Metro"
+  },
+  {
+    "Id": 158,
+    "Name": "Saki Naka",
+    "Line": "Metro"
+  },
+  {
+    "Id": 159,
+    "Name": "Marol Naka",
+    "Line": "Metro"
+  },
+  {
+    "Id": 160,
+    "Name": "Airport Road",
+    "Line": "Metro"
+  },
+  {
+    "Id": 161,
+    "Name": "Chakala / JB Nagar",
+    "Line": "Metro"
+  },
+  {
+    "Id": 162,
+    "Name": "Western Express Highway",
+    "Line": "Metro"
+  },
+  {
+    "Id": 163,
+    "Name": "Andheri",
+    "Line": "Metro"
+  },
+  {
+    "Id": 164,
+    "Name": "Azad Nagar",
+    "Line": "Metro"
+  },
+  {
+    "Id": 165,
+    "Name": "D N Nagar",
+    "Line": "Metro"
+  },
+  {
+    "Id": 166,
+    "Name": "Versova",
+    "Line": "Metro"
+  },
+  {
+    "Id": 167,
+    "Name": "Chembur",
+    "Line": "Mono"
+  },
+  {
+    "Id": 168,
+    "Name": "VNP Marg",
+    "Line": "Mono"
+  },
+  {
+    "Id": 169,
+    "Name": "Fertiliser Township",
+    "Line": "Mono"
+  },
+  {
+    "Id": 170,
+    "Name": "Bharat Petroleum",
+    "Line": "Mono"
+  },
+  {
+    "Id": 171,
+    "Name": "Mysore Colony",
+    "Line": "Mono"
+  },
+  {
+    "Id": 172,
+    "Name": "Bhakti Park",
+    "Line": "Mono"
+  },
+  {
+    "Id": 173,
+    "Name": "Wadala",
+    "Line": "Mono"
+  },
+  {
+    "Id": 174,
+    "Name": "GTB Nagar",
+    "Line": "Mono"
+  },
+  {
+    "Id": 175,
+    "Name": "Antop Hill",
+    "Line": "Mono"
+  },
+  {
+    "Id": 176,
+    "Name": "Acharya Atre Nagar",
+    "Line": "Mono"
+  },
+  {
+    "Id": 177,
+    "Name": "Wadala Bridge",
+    "Line": "Mono"
+  },
+  {
+    "Id": 178,
+    "Name": "Dadar East",
+    "Line": "Mono"
+  },
+  {
+    "Id": 179,
+    "Name": "Naigaon Mono",
+    "Line": "Mono"
+  },
+  {
+    "Id": 180,
+    "Name": "Ambedkar Nagar",
+    "Line": "Mono"
+  },
+  {
+    "Id": 181,
+    "Name": "Mint Colony",
+    "Line": "Mono"
+  },
+  {
+    "Id": 182,
+    "Name": "Lower Parel",
+    "Line": "Mono"
+  },
+  {
+    "Id": 183,
+    "Name": "Sant Gadge Maharaj Chowk",
+    "Line": "Mono"
+  }
+]

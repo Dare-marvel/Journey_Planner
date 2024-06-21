@@ -1,0 +1,184 @@
+Id,Name,Line
+1,Churchgate,Western
+2,Marine Lines,Western
+3,Charni Road,Western
+4,Grant Road,Western
+5,Mumbai Central,Western
+6,Mahalaxmi,Western
+7,Lower Parel,Western
+8,Prabhadevi,Western
+9,Dadar,Western
+10,Matunga Road,Western
+11,Mahim,Western
+12,Bandra,Western
+13,Khar Road,Western
+14,Santacruz,Western
+15,Ville Parle,Western
+16,Andheri,Western
+17,Jogeshwari,Western
+18,Ram Mandir,Western
+19,Goregaon,Western
+20,Malad,Western
+21,Kandivali,Western
+22,Borivali,Western
+23,Dahisar,Western
+24,Mira Road,Western
+25,Bhayandar,Western
+26,Naigaon,Western
+27,Vasai Road,Western
+28,Nallasopara,Western
+29,Virar,Western
+30,Vaitarna,Western
+31,Saphale,Western
+32,Kelve Road,Western
+33,Palghar,Western
+34,Umroli,Western
+35,Boisar,Western
+36,Vangaon,Western
+37,Dahanu Road,Western
+38,Chattrapati Shivaji Maharaj Terminus,Central
+39,Masjid Bunder,Central
+40,Sandhurst Road,Central
+41,Byculla,Central
+42,Chinchpokali,Central
+43,Currey Road,Central
+44,Parel,Central
+45,Dadar,Central
+46,Matunga,Central
+47,Sion,Central
+48,Kurla,Central
+49,Vidya Vihar,Central
+50,Ghatkopar,Central
+51,Vikhroli,Central
+52,Kanjur Marg,Central
+53,Bhandup,Central
+54,Nahur,Central
+55,Mulund,Central
+56,Thane,Central
+57,Kalwa,Central
+58,Mumbra,Central
+59,Diva,Central
+60,Kopar,Central
+61,Dombivali,Central
+62,Thakurli,Central
+63,Kalyan,Central
+64,Vitthalvadi,Central
+65,Ulhas Nagar,Central
+66,Ambernath,Central
+67,Badlapur,Central
+68,Vangani,Central
+69,Shelu,Central
+70,Neral,Central
+71,Bhivpuri Road,Central
+72,Karjat,Central
+73,Palasdhari,Central
+74,Kelavali,Central
+75,Dolavali,Central
+76,Lowjee,Central
+77,Khopoli,Central
+78,Shahad,Central
+79,Ambivli,Central
+80,Titwala,Central
+81,Khadavali,Central
+82,Vasind,Central
+83,Asangaon,Central
+84,Atgaon,Central
+85,Thansit,Central
+86,Khardi,Central
+87,Umbermali,Central
+88,Kasara,Central
+89,Chattrapati Shivaji Maharaj Terminus,Harbour
+90,Masjid Bunder,Harbour
+91,Sandhurst Road,Harbour
+92,Dockyard Road,Harbour
+93,Reay Road,Harbour
+94,Cotton Green,Harbour
+95,Sewri,Harbour
+96,Vadala,Harbour
+97,King's Circle,Harbour
+98,Mahim,Harbour
+99,Bandra,Harbour
+100,Khar Road,Harbour
+101,Santacruz,Harbour
+102,Ville Parle,Harbour
+103,Andheri,Harbour
+104,Jogeshwari,Harbour
+105,Ram Mandir,Harbour
+106,Goregaon,Harbour
+107,GTB Nagar,Harbour
+108,Chunna Bhatti,Harbour
+109,Kurla,Harbour
+110,Tilak Nagar,Harbour
+111,Chembur,Harbour
+112,Govandi,Harbour
+113,Mankhurd,Harbour
+114,Vashi,Harbour
+115,Sanpada,Harbour
+116,Juinagar,Harbour
+117,Nerul,Harbour
+118,Seawood Darave,Harbour
+119,Belapur CBD,Harbour
+120,Khargar,Harbour
+121,Manasarovar,Harbour
+122,Khandeshwar,Harbour
+123,Panvel,Harbour
+124,Thane,Thane-Vashi
+125,Digha Road,Thane-Vashi
+126,Airoli,Thane-Vashi
+127,Rabale,Thane-Vashi
+128,Ghansoli,Thane-Vashi
+129,Kopar Khairane,Thane-Vashi
+130,Turbhe,Thane-Vashi
+131,Sanpada,Thane-Vashi
+132,Vashi,Thane-Vashi
+133,Juinagar,Thane-Vashi
+134,Nerul,Thane-Vashi
+135,Seawood Darave,Thane-Vashi
+136,Belapur CBD,Thane-Vashi
+137,Khargar,Thane-Vashi
+138,Manasarovar,Thane-Vashi
+139,Khandeshwar,Thane-Vashi
+140,Panvel,Thane-Vashi
+141,Nerul,Nerul-Uran
+142,Seawood Darave,Nerul-Uran
+143,Belapur CBD,Nerul-Uran
+144,Bhamandongri,Nerul-Uran
+145,Kharkopar,Nerul-Uran
+146,Ranjanpada,Nerul-Uran
+147,Nava Sheva,Nerul-Uran
+148,Dronagiri,Nerul-Uran
+149,Uran,Nerul-Uran
+150,Neral,Neral-Matheran
+151,Jumapatti,Neral-Matheran
+152,Waterpipe,Neral-Matheran
+153,Aman Lodge,Neral-Matheran
+154,Matheran,Neral-Matheran
+155,Ghatkopar,Metro
+156,Jagruti Nagar,Metro
+157,Asalpha,Metro
+158,Saki Naka,Metro
+159,Marol Naka,Metro
+160,Airport Road,Metro
+161,Chakala / JB Nagar,Metro
+162,Western Express Highway,Metro
+163,Andheri,Metro
+164,Azad Nagar,Metro
+165,D N Nagar,Metro
+166,Versova,Metro
+167,Chembur,Mono
+168,VNP Marg,Mono
+169,Fertiliser Township,Mono
+170,Bharat Petroleum,Mono
+171,Mysore Colony,Mono
+172,Bhakti Park,Mono
+173,Wadala,Mono
+174,GTB Nagar,Mono
+175,Antop Hill,Mono
+176,Acharya Atre Nagar,Mono
+177,Wadala Bridge,Mono
+178,Dadar East,Mono
+179,Naigaon Mono,Mono
+180,Ambedkar Nagar,Mono
+181,Mint Colony,Mono
+182,Lower Parel,Mono
+183,Sant Gadge Maharaj Chowk,Mono
