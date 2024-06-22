@@ -1,0 +1,877 @@
+[
+  {
+    "Station 1": 1,
+    "Station 2": 2,
+    "Time": 3
+  },
+  {
+    "Station 1": 2,
+    "Station 2": 3,
+    "Time": 2
+  },
+  {
+    "Station 1": 3,
+    "Station 2": 4,
+    "Time": 3
+  },
+  {
+    "Station 1": 4,
+    "Station 2": 5,
+    "Time": 2
+  },
+  {
+    "Station 1": 5,
+    "Station 2": 6,
+    "Time": 3
+  },
+  {
+    "Station 1": 6,
+    "Station 2": 7,
+    "Time": 3
+  },
+  {
+    "Station 1": 7,
+    "Station 2": 8,
+    "Time": 3
+  },
+  {
+    "Station 1": 8,
+    "Station 2": 9,
+    "Time": 2
+  },
+  {
+    "Station 1": 9,
+    "Station 2": 10,
+    "Time": 2
+  },
+  {
+    "Station 1": 10,
+    "Station 2": 11,
+    "Time": 3
+  },
+  {
+    "Station 1": 11,
+    "Station 2": 12,
+    "Time": 4
+  },
+  {
+    "Station 1": 12,
+    "Station 2": 13,
+    "Time": 3
+  },
+  {
+    "Station 1": 13,
+    "Station 2": 14,
+    "Time": 2
+  },
+  {
+    "Station 1": 14,
+    "Station 2": 15,
+    "Time": 3
+  },
+  {
+    "Station 1": 15,
+    "Station 2": 16,
+    "Time": 5
+  },
+  {
+    "Station 1": 16,
+    "Station 2": 17,
+    "Time": 2
+  },
+  {
+    "Station 1": 17,
+    "Station 2": 18,
+    "Time": 2
+  },
+  {
+    "Station 1": 18,
+    "Station 2": 19,
+    "Time": 2
+  },
+  {
+    "Station 1": 19,
+    "Station 2": 20,
+    "Time": 2
+  },
+  {
+    "Station 1": 20,
+    "Station 2": 21,
+    "Time": 3
+  },
+  {
+    "Station 1": 21,
+    "Station 2": 22,
+    "Time": 6
+  },
+  {
+    "Station 1": 22,
+    "Station 2": 23,
+    "Time": 5
+  },
+  {
+    "Station 1": 23,
+    "Station 2": 24,
+    "Time": 5
+  },
+  {
+    "Station 1": 24,
+    "Station 2": 25,
+    "Time": 5
+  },
+  {
+    "Station 1": 25,
+    "Station 2": 26,
+    "Time": 5
+  },
+  {
+    "Station 1": 26,
+    "Station 2": 27,
+    "Time": 5
+  },
+  {
+    "Station 1": 27,
+    "Station 2": 28,
+    "Time": 5
+  },
+  {
+    "Station 1": 28,
+    "Station 2": 29,
+    "Time": 6
+  },
+  {
+    "Station 1": 29,
+    "Station 2": 30,
+    "Time": 9
+  },
+  {
+    "Station 1": 30,
+    "Station 2": 31,
+    "Time": 8
+  },
+  {
+    "Station 1": 31,
+    "Station 2": 32,
+    "Time": 8
+  },
+  {
+    "Station 1": 32,
+    "Station 2": 33,
+    "Time": 15
+  },
+  {
+    "Station 1": 33,
+    "Station 2": 34,
+    "Time": 6
+  },
+  {
+    "Station 1": 34,
+    "Station 2": 35,
+    "Time": 6
+  },
+  {
+    "Station 1": 35,
+    "Station 2": 36,
+    "Time": 9
+  },
+  {
+    "Station 1": 36,
+    "Station 2": 37,
+    "Time": 13
+  },
+  {
+    "Station 1": 38,
+    "Station 2": 39,
+    "Time": 3
+  },
+  {
+    "Station 1": 39,
+    "Station 2": 40,
+    "Time": 2
+  },
+  {
+    "Station 1": 40,
+    "Station 2": 41,
+    "Time": 3
+  },
+  {
+    "Station 1": 41,
+    "Station 2": 42,
+    "Time": 2
+  },
+  {
+    "Station 1": 42,
+    "Station 2": 43,
+    "Time": 2
+  },
+  {
+    "Station 1": 43,
+    "Station 2": 44,
+    "Time": 3
+  },
+  {
+    "Station 1": 44,
+    "Station 2": 45,
+    "Time": 3
+  },
+  {
+    "Station 1": 45,
+    "Station 2": 46,
+    "Time": 3
+  },
+  {
+    "Station 1": 46,
+    "Station 2": 47,
+    "Time": 4
+  },
+  {
+    "Station 1": 47,
+    "Station 2": 48,
+    "Time": 4
+  },
+  {
+    "Station 1": 48,
+    "Station 2": 49,
+    "Time": 3
+  },
+  {
+    "Station 1": 49,
+    "Station 2": 50,
+    "Time": 3
+  },
+  {
+    "Station 1": 50,
+    "Station 2": 51,
+    "Time": 5
+  },
+  {
+    "Station 1": 51,
+    "Station 2": 52,
+    "Time": 3
+  },
+  {
+    "Station 1": 52,
+    "Station 2": 53,
+    "Time": 3
+  },
+  {
+    "Station 1": 53,
+    "Station 2": 54,
+    "Time": 3
+  },
+  {
+    "Station 1": 54,
+    "Station 2": 55,
+    "Time": 3
+  },
+  {
+    "Station 1": 55,
+    "Station 2": 56,
+    "Time": 4
+  },
+  {
+    "Station 1": 56,
+    "Station 2": 57,
+    "Time": 4
+  },
+  {
+    "Station 1": 57,
+    "Station 2": 58,
+    "Time": 6
+  },
+  {
+    "Station 1": 58,
+    "Station 2": 59,
+    "Time": 4
+  },
+  {
+    "Station 1": 59,
+    "Station 2": 60,
+    "Time": 5
+  },
+  {
+    "Station 1": 60,
+    "Station 2": 61,
+    "Time": 4
+  },
+  {
+    "Station 1": 61,
+    "Station 2": 62,
+    "Time": 3
+  },
+  {
+    "Station 1": 62,
+    "Station 2": 63,
+    "Time": 6
+  },
+  {
+    "Station 1": 63,
+    "Station 2": 64,
+    "Time": 5
+  },
+  {
+    "Station 1": 64,
+    "Station 2": 65,
+    "Time": 3
+  },
+  {
+    "Station 1": 65,
+    "Station 2": 66,
+    "Time": 6
+  },
+  {
+    "Station 1": 66,
+    "Station 2": 67,
+    "Time": 5
+  },
+  {
+    "Station 1": 67,
+    "Station 2": 68,
+    "Time": 9
+  },
+  {
+    "Station 1": 68,
+    "Station 2": 69,
+    "Time": 4
+  },
+  {
+    "Station 1": 69,
+    "Station 2": 70,
+    "Time": 4
+  },
+  {
+    "Station 1": 70,
+    "Station 2": 71,
+    "Time": 7
+  },
+  {
+    "Station 1": 71,
+    "Station 2": 72,
+    "Time": 9
+  },
+  {
+    "Station 1": 72,
+    "Station 2": 73,
+    "Time": 5
+  },
+  {
+    "Station 1": 73,
+    "Station 2": 74,
+    "Time": 7
+  },
+  {
+    "Station 1": 74,
+    "Station 2": 75,
+    "Time": 3
+  },
+  {
+    "Station 1": 75,
+    "Station 2": 76,
+    "Time": 4
+  },
+  {
+    "Station 1": 76,
+    "Station 2": 77,
+    "Time": 6
+  },
+  {
+    "Station 1": 63,
+    "Station 2": 78,
+    "Time": 5
+  },
+  {
+    "Station 1": 78,
+    "Station 2": 79,
+    "Time": 3
+  },
+  {
+    "Station 1": 79,
+    "Station 2": 80,
+    "Time": 5
+  },
+  {
+    "Station 1": 80,
+    "Station 2": 81,
+    "Time": 8
+  },
+  {
+    "Station 1": 81,
+    "Station 2": 82,
+    "Time": 8
+  },
+  {
+    "Station 1": 82,
+    "Station 2": 83,
+    "Time": 6
+  },
+  {
+    "Station 1": 83,
+    "Station 2": 84,
+    "Time": 9
+  },
+  {
+    "Station 1": 84,
+    "Station 2": 85,
+    "Time": 7
+  },
+  {
+    "Station 1": 85,
+    "Station 2": 86,
+    "Time": 5
+  },
+  {
+    "Station 1": 86,
+    "Station 2": 87,
+    "Time": 6
+  },
+  {
+    "Station 1": 87,
+    "Station 2": 88,
+    "Time": 12
+  },
+  {
+    "Station 1": 89,
+    "Station 2": 90,
+    "Time": 3
+  },
+  {
+    "Station 1": 90,
+    "Station 2": 91,
+    "Time": 2
+  },
+  {
+    "Station 1": 91,
+    "Station 2": 92,
+    "Time": 2
+  },
+  {
+    "Station 1": 92,
+    "Station 2": 93,
+    "Time": 2
+  },
+  {
+    "Station 1": 93,
+    "Station 2": 94,
+    "Time": 2
+  },
+  {
+    "Station 1": 94,
+    "Station 2": 95,
+    "Time": 3
+  },
+  {
+    "Station 1": 95,
+    "Station 2": 96,
+    "Time": 3
+  },
+  {
+    "Station 1": 96,
+    "Station 2": 97,
+    "Time": 5
+  },
+  {
+    "Station 1": 97,
+    "Station 2": 98,
+    "Time": 2
+  },
+  {
+    "Station 1": 98,
+    "Station 2": 99,
+    "Time": 4
+  },
+  {
+    "Station 1": 99,
+    "Station 2": 100,
+    "Time": 3
+  },
+  {
+    "Station 1": 100,
+    "Station 2": 101,
+    "Time": 2
+  },
+  {
+    "Station 1": 101,
+    "Station 2": 102,
+    "Time": 3
+  },
+  {
+    "Station 1": 102,
+    "Station 2": 103,
+    "Time": 5
+  },
+  {
+    "Station 1": 103,
+    "Station 2": 104,
+    "Time": 2
+  },
+  {
+    "Station 1": 104,
+    "Station 2": 105,
+    "Time": 2
+  },
+  {
+    "Station 1": 105,
+    "Station 2": 106,
+    "Time": 2
+  },
+  {
+    "Station 1": 96,
+    "Station 2": 107,
+    "Time": 4
+  },
+  {
+    "Station 1": 107,
+    "Station 2": 108,
+    "Time": 3
+  },
+  {
+    "Station 1": 108,
+    "Station 2": 109,
+    "Time": 3
+  },
+  {
+    "Station 1": 109,
+    "Station 2": 110,
+    "Time": 3
+  },
+  {
+    "Station 1": 110,
+    "Station 2": 111,
+    "Time": 2
+  },
+  {
+    "Station 1": 111,
+    "Station 2": 112,
+    "Time": 3
+  },
+  {
+    "Station 1": 112,
+    "Station 2": 113,
+    "Time": 3
+  },
+  {
+    "Station 1": 113,
+    "Station 2": 114,
+    "Time": 8
+  },
+  {
+    "Station 1": 114,
+    "Station 2": 115,
+    "Time": 3
+  },
+  {
+    "Station 1": 115,
+    "Station 2": 116,
+    "Time": 3
+  },
+  {
+    "Station 1": 116,
+    "Station 2": 117,
+    "Time": 3
+  },
+  {
+    "Station 1": 117,
+    "Station 2": 118,
+    "Time": 3
+  },
+  {
+    "Station 1": 118,
+    "Station 2": 119,
+    "Time": 4
+  },
+  {
+    "Station 1": 119,
+    "Station 2": 120,
+    "Time": 4
+  },
+  {
+    "Station 1": 120,
+    "Station 2": 121,
+    "Time": 3
+  },
+  {
+    "Station 1": 121,
+    "Station 2": 122,
+    "Time": 3
+  },
+  {
+    "Station 1": 122,
+    "Station 2": 123,
+    "Time": 3
+  },
+  {
+    "Station 1": 124,
+    "Station 2": 125,
+    "Time": 5
+  },
+  {
+    "Station 1": 125,
+    "Station 2": 126,
+    "Time": 3
+  },
+  {
+    "Station 1": 126,
+    "Station 2": 127,
+    "Time": 3
+  },
+  {
+    "Station 1": 127,
+    "Station 2": 128,
+    "Time": 3
+  },
+  {
+    "Station 1": 128,
+    "Station 2": 129,
+    "Time": 3
+  },
+  {
+    "Station 1": 129,
+    "Station 2": 130,
+    "Time": 4
+  },
+  {
+    "Station 1": 130,
+    "Station 2": 131,
+    "Time": 3
+  },
+  {
+    "Station 1": 131,
+    "Station 2": 132,
+    "Time": 3
+  },
+  {
+    "Station 1": 130,
+    "Station 2": 133,
+    "Time": 5
+  },
+  {
+    "Station 1": 133,
+    "Station 2": 134,
+    "Time": 3
+  },
+  {
+    "Station 1": 134,
+    "Station 2": 135,
+    "Time": 3
+  },
+  {
+    "Station 1": 135,
+    "Station 2": 136,
+    "Time": 4
+  },
+  {
+    "Station 1": 136,
+    "Station 2": 137,
+    "Time": 4
+  },
+  {
+    "Station 1": 137,
+    "Station 2": 138,
+    "Time": 3
+  },
+  {
+    "Station 1": 138,
+    "Station 2": 139,
+    "Time": 3
+  },
+  {
+    "Station 1": 139,
+    "Station 2": 140,
+    "Time": 3
+  },
+  {
+    "Station 1": 141,
+    "Station 2": 142,
+    "Time": null
+  },
+  {
+    "Station 1": 142,
+    "Station 2": 143,
+    "Time": null
+  },
+  {
+    "Station 1": 143,
+    "Station 2": 144,
+    "Time": null
+  },
+  {
+    "Station 1": 144,
+    "Station 2": 145,
+    "Time": null
+  },
+  {
+    "Station 1": 145,
+    "Station 2": 146,
+    "Time": null
+  },
+  {
+    "Station 1": 146,
+    "Station 2": 147,
+    "Time": null
+  },
+  {
+    "Station 1": 147,
+    "Station 2": 148,
+    "Time": null
+  },
+  {
+    "Station 1": 148,
+    "Station 2": 149,
+    "Time": null
+  },
+  {
+    "Station 1": 150,
+    "Station 2": 151,
+    "Time": null
+  },
+  {
+    "Station 1": 151,
+    "Station 2": 152,
+    "Time": null
+  },
+  {
+    "Station 1": 152,
+    "Station 2": 153,
+    "Time": null
+  },
+  {
+    "Station 1": 153,
+    "Station 2": 154,
+    "Time": null
+  },
+  {
+    "Station 1": 155,
+    "Station 2": 156,
+    "Time": 3
+  },
+  {
+    "Station 1": 156,
+    "Station 2": 157,
+    "Time": 2
+  },
+  {
+    "Station 1": 157,
+    "Station 2": 158,
+    "Time": 2
+  },
+  {
+    "Station 1": 158,
+    "Station 2": 159,
+    "Time": 2
+  },
+  {
+    "Station 1": 159,
+    "Station 2": 160,
+    "Time": 2
+  },
+  {
+    "Station 1": 160,
+    "Station 2": 161,
+    "Time": 2
+  },
+  {
+    "Station 1": 161,
+    "Station 2": 162,
+    "Time": 2
+  },
+  {
+    "Station 1": 162,
+    "Station 2": 163,
+    "Time": 3
+  },
+  {
+    "Station 1": 163,
+    "Station 2": 164,
+    "Time": 4
+  },
+  {
+    "Station 1": 164,
+    "Station 2": 165,
+    "Time": 3
+  },
+  {
+    "Station 1": 165,
+    "Station 2": 166,
+    "Time": 2
+  },
+  {
+    "Station 1": 167,
+    "Station 2": 168,
+    "Time": 2
+  },
+  {
+    "Station 1": 168,
+    "Station 2": 169,
+    "Time": 3
+  },
+  {
+    "Station 1": 169,
+    "Station 2": 170,
+    "Time": 2
+  },
+  {
+    "Station 1": 170,
+    "Station 2": 171,
+    "Time": 3
+  },
+  {
+    "Station 1": 171,
+    "Station 2": 172,
+    "Time": 4
+  },
+  {
+    "Station 1": 172,
+    "Station 2": 173,
+    "Time": 4
+  },
+  {
+    "Station 1": 173,
+    "Station 2": 174,
+    "Time": 2
+  },
+  {
+    "Station 1": 174,
+    "Station 2": 175,
+    "Time": 2
+  },
+  {
+    "Station 1": 175,
+    "Station 2": 176,
+    "Time": 2
+  },
+  {
+    "Station 1": 176,
+    "Station 2": 177,
+    "Time": 3
+  },
+  {
+    "Station 1": 177,
+    "Station 2": 178,
+    "Time": 3
+  },
+  {
+    "Station 1": 178,
+    "Station 2": 179,
+    "Time": 2
+  },
+  {
+    "Station 1": 179,
+    "Station 2": 180,
+    "Time": 4
+  },
+  {
+    "Station 1": 180,
+    "Station 2": 181,
+    "Time": 2
+  },
+  {
+    "Station 1": 181,
+    "Station 2": 182,
+    "Time": 3
+  },
+  {
+    "Station 1": 182,
+    "Station 2": 183,
+    "Time": 3
+  }
+]
