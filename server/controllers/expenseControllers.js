@@ -3,7 +3,7 @@ const { Expense } = require("../models");
 const addExpense = async (req, res) => {
     const { title, category, amount, date } = req.body;
     const expense = await Expense.create({ title, category, amount, date, user: req.user._id });
-    console.log(expense);
+    // console.log(expense);
     if (expense)
         res.json(expense);
     else
