@@ -1,8 +1,9 @@
-import { Box, Button, Card, Flex, Heading, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Button, Card, Flex, Heading, Image, Link, Spinner, Text } from "@chakra-ui/react";
 import mumbaiLocal from '../../../ProjectImages/MumbaiLocal.jpg';
 import { useState } from "react";
 
 export default function News() {
+    const { token } = JSON.parse(localStorage.getItem('userInfo'))
     const [news, setNews] = useState({
         "meta": {
             "found": 1842043,
@@ -65,27 +66,32 @@ export default function News() {
         ]
     });
     const [error, setError] = useState(null);
+    const [loading, setLoading] = useState(false);
     const getNews = async () => {
         setError(null);
-        const response = await fetch(`https://api.thenewsapi.com/v1/news/top?api_token=${import.meta.env.VITE_NEWS_API}&locale=in`)
+        // setNews(null);
+        setLoading(true);
+        const response = await fetch(`api/external/news`, { headers: { Authorization: `Bearer ${token}` } })
         const json = await response.json()
         if (response.ok) setNews(json)
         else setError(json)
-        console.log(json);
+        setLoading(false)
+        // console.log(json);
     }
     return (
         <>
             {/* <Navbar /> */}
             <Box position='fixed' zIndex={-10} h='100dvh' w='100dvw' backgroundImage={mumbaiLocal} backgroundSize='cover' backgroundPosition='center' backgroundRepeat='no-repeat' ></Box>
             <Flex minH='100dvh' minW='100dvw' align='center' justify='center' p={4}>
-                <Card backgroundColor='rgba(255,255,255,0.5)' backdropFilter='blur(2px)' maxW='1440px' p={4} display='flex' flexDir='column' gap={4}>
-                    {news && news.data.map((e) => <Card as={Link} href={e.url} target="_blank" key={e.uuid} display='flex' p={4} gap={2} direction={{ base: 'column', md: 'row' }} justify='center' align='center'>
+                <Card backgroundColor='rgba(255,255,255,0.5)' backdropFilter='blur(2px)' maxW='1440px' p={4} display='flex' flexDir='column' gap={4} align='center'>
+                    {!loading && news && news.data.map((e) => <Card as={Link} href={e.url} target="_blank" key={e.uuid} display='flex' p={4} gap={2} direction={{ base: 'column', md: 'row' }} justify='center' align='center'>
                         <Image src={e.image_url} h='200px' />
                         <Flex direction='column' gap={4}>
                             <Heading fontSize='xl' textOverflow='ellipsis' noOfLines={1}>{e.title}</Heading>
                             <Text noOfLines={2} textOverflow='ellipsis'>{e.description}</Text>
                         </Flex>
                     </Card>)}
+                    {loading && <Spinner size='xl' />}
                     <Button onClick={getNews}>Get Current News</Button>
                     {error && error.message}
                 </Card>

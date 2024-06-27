@@ -1,20 +1,20 @@
-import { Box, Button, Card, Flex, Heading, Icon, Image, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Card, Flex, Heading, Icon, Image, Input, Spinner, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDroplet, faEye, faGauge, faMoon, faSun, faTemperature4, faWind } from '@fortawesome/free-solid-svg-icons';
 import darkCity from '../../../ProjectImages/Darkcity.jpg';
 
-const api_key = import.meta.env.VITE_WEATHER_API;
 const urls = {
-    current: (lat, lon) => `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}`,
-    pollution: (lat, lon) => `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api_key}`,
-    reverse: (lat, lon) => `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${lon}&appid=${api_key}`,
-    geo: (query) => `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${api_key}`
+    current: (lat, lon) => `api/external/weather/current?lat=${lat}&lon=${lon}`,
+    pollution: (lat, lon) => `api/external/weather/pollution?lat=${lat}&lon=${lon}`,
+    reverse: (lat, lon) => `api/external/weather/reverse?lat=${lat}&lon=${lon}`,
+    geo: (query) => `api/external/weather/geo?q=${query}`
 }
 
 const celsius = (k) => Math.round(k - 273.15) + '°';
 
 export default function Weather() {
+    const { token } = JSON.parse(localStorage.getItem('userInfo'))
     const [data, setData] = useState({
         "current": {
             "coord": {
@@ -88,16 +88,22 @@ export default function Weather() {
     const [currLocation, setCurrLocation] = useState('Mumbai, Maharashtra, IN, 17 Jun 2024');
     const [coordList, setCoordList] = useState([]);
 
+    const [queryLoading, setQueryLoading] = useState(false);
+    const [dataLoading, setDataLoading] = useState(false);
+
     const search = async () => {
-        const coords = await fetch(urls.geo(query));
+        setQueryLoading(true)
+        const coords = await fetch(urls.geo(query), { headers: { Authorization: `Bearer ${token}` } });
         const coordsJson = await coords.json();
         setCoordList(coordsJson);
+        setQueryLoading(false)
     };
 
     const setLocation = async (loc) => {
+        setDataLoading(true)
 
-        const current = await fetch(urls.current(loc.lat, loc.lon));
-        const pollution = await fetch(urls.pollution(loc.lat, loc.lon));
+        const current = await fetch(urls.current(loc.lat, loc.lon), { headers: { Authorization: `Bearer ${token}` } });
+        const pollution = await fetch(urls.pollution(loc.lat, loc.lon), { headers: { Authorization: `Bearer ${token}` } });
 
         const currentJson = await current.json();
         const pollutionJson = await pollution.json();
@@ -106,6 +112,7 @@ export default function Weather() {
         setCurrLocation(`${loc.name}, ${loc.state}, ${loc.country}, ${(new Date()).toDateString()}`)
         setCoordList([]);
         setQuery('');
+        setDataLoading(false)
     }
 
     const rise = new Date(data.current.sys.sunrise * 1000)
@@ -121,6 +128,7 @@ export default function Weather() {
                         <Input placeholder='Search City' value={query} onChange={(e) => setQuery(e.target.value)} />
                         <Button onClick={search}>Search</Button>
                     </Flex>
+                    {queryLoading && <Spinner size='xl' alignSelf='center' />}
                     {coordList.length > 0 && query !== '' && <Flex direction='column' gap={2}>
                         {coordList.map((e, i) => <Button onClick={() => setLocation(e)} key={i} p={2}>
                             {e.name}, {e.state}, {e.country}
@@ -131,6 +139,7 @@ export default function Weather() {
                     {currLocation}
                 </Card>
                 <Flex direction='column' justify='center' w='100%' align='center' gap={4}>
+                    {dataLoading && <Spinner size='xl' alignSelf='center' color="white" />}
                     <Flex direction='row' gap={4} w='100%' justify='center'>
                         <Card as={Flex} direction='column' justify='center' p={4}>
                             <Flex w='100%' justify='center' gap={4} align='center'>

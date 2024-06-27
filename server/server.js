@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 const path = require("path");
 
 const { connectToMongoDB } = require("./config");
-const { userRoutes, chatRoutes, messageRoutes, expenseRoutes } = require("./routes");
+const { userRoutes, chatRoutes, messageRoutes, expenseRoutes, external } = require("./routes");
 const { notFound, errorHandler } = require("./middleware");
 
 const app = express(); // Use express js in our app
@@ -11,7 +11,7 @@ app.use(express.json()); // Accept JSON data
 dotenv.config({ path: path.join(__dirname, "./.env") }); // Specify a custom path if your file containing environment variables is located elsewhere
 connectToMongoDB(); // Connect to Database
 
-app.use('*', (req, res, next) => {
+app.use((req, res, next) => {
     console.log(req.url, req.method)
     next();
 })
@@ -19,6 +19,7 @@ app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
 app.use("/api/expense", expenseRoutes);
+app.use("/api/external", external);
 
 // --------------------------DEPLOYMENT------------------------------
 
