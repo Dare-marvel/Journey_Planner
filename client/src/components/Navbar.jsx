@@ -56,7 +56,7 @@ export function Navbar() {
                     justify={["center", "center", "flex-end", "flex-end"]}
                     direction={["column", "column", "row", "row"]}
                     pt={[4, 4, 0, 0]}>
-                    <ChakraLink as={ReactLink} to='/menu' px={4} py={2} backgroundColor={location.pathname == '/menu' ? 'rgba(0,0,0,0.1)' : ''} >Menu</ChakraLink>
+                    <ChakraLink as={ReactLink} to='/news' px={4} py={2} backgroundColor={location.pathname == '/news' ? 'rgba(0,0,0,0.1)' : ''} >News</ChakraLink>
                     <ChakraLink as={ReactLink} to='/list' px={4} py={2} backgroundColor={location.pathname == '/list' ? 'rgba(0,0,0,0.1)' : ''} >List</ChakraLink>
                     <ChakraLink as={ReactLink} to='/shortestpath' px={4} py={2} backgroundColor={location.pathname == '/shortestpath' ? 'rgba(0,0,0,0.1)' : ''} >Path</ChakraLink>
                     <ChakraLink as={ReactLink} to='/map' px={4} py={2} backgroundColor={location.pathname == '/map' ? 'rgba(0,0,0,0.1)' : ''} >Map</ChakraLink>
