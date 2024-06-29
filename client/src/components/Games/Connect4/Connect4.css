@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+.row__connect4 {
+    display: flex;
+    margin-left: 43.5vw;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 8px ridge #50c8ff;
+    border-radius: 30px;
+    width: 13vw;
+    height: 5vw;
+}
+
+.inactivePlayer__connect4 {
+    opacity: 0.3;
+}
+
+.activePlayer__connect4 {
+    opacity: 1;
+}
+
+.button__connect4 {
+    background-color: #303030;
+    color: #50c8ff;
+    height: 7%;
+    width: 34%;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.button__connect4:hover {
+    background-color: #50c8ff;
+    color: #303030;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.cell__connect4 {
+    height: 50px;
+    width: 50px;
+    background-color: #1990ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.white__connect4 {
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    border: 5px inset #cc00ff;
+    border-radius: 100px;
+}
+
+.red__connect4 {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border: 5px outset darkred;
+    border-radius: 100px;
+    transition: background-color 0.5s;
+}
+
+.yellow__connect4 {
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    border: 5px outset goldenrod;
+    border-radius: 100px;
+    transition: background-color 0.5s;
+}
+
+.winorloss__connect4 {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+    margin: 0 auto;
+    display: table;
+}
+
+.centerDiv__connect4 {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: "VT323", monospace;
+    font-size: 50px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Replay button */

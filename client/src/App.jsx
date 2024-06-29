@@ -10,6 +10,7 @@ import ExpenseTracker from './pages/ExpenseTracker'
 import { Navbar } from './components/Navbar'
 import Weather from './pages/Weather'
 import News from './pages/News'
+import Games from './pages/Games'
 
 function App() {
     const { user } = ChatState();
@@ -31,6 +32,7 @@ function App() {
                         <Route path='/map' element={<Map />} />
                         <Route path='/tracker' element={<ExpenseTracker />} />
                         <Route path='/weather' element={<Weather />} />
+                        <Route path='/games' element={<Games />} />
                         <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>
                 </div>)}
