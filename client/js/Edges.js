@@ -1,4 +1,4 @@
-[
+export const edges = [
   {
     "Station 1": 1,
     "Station 2": 2,
@@ -873,5 +873,150 @@
     "Station 1": 182,
     "Station 2": 183,
     "Time": 3
+  },
+  {
+    "Station 1": 9,
+    "Station 2": 45,
+    "Time": 0
+  },
+  {
+    "Station 1": 11,
+    "Station 2": 98,
+    "Time": 0
+  },
+  {
+    "Station 1": 12,
+    "Station 2": 99,
+    "Time": 0
+  },
+  {
+    "Station 1": 13,
+    "Station 2": 100,
+    "Time": 0
+  },
+  {
+    "Station 1": 14,
+    "Station 2": 101,
+    "Time": 0
+  },
+  {
+    "Station 1": 15,
+    "Station 2": 102,
+    "Time": 0
+  },
+  {
+    "Station 1": 16,
+    "Station 2": 103,
+    "Time": 0
+  },
+  {
+    "Station 1": 17,
+    "Station 2": 104,
+    "Time": 0
+  },
+  {
+    "Station 1": 18,
+    "Station 2": 105,
+    "Time": 0
+  },
+  {
+    "Station 1": 19,
+    "Station 2": 106,
+    "Time": 0
+  },
+  {
+    "Station 1": 38,
+    "Station 2": 89,
+    "Time": 0
+  },
+  {
+    "Station 1": 39,
+    "Station 2": 90,
+    "Time": 0
+  },
+  {
+    "Station 1": 40,
+    "Station 2": 91,
+    "Time": 0
+  },
+  {
+    "Station 1": 48,
+    "Station 2": 109,
+    "Time": 0
+  },
+  {
+    "Station 1": 56,
+    "Station 2": 124,
+    "Time": 0
+  },
+  {
+    "Station 1": 70,
+    "Station 2": 150,
+    "Time": 0
+  },
+  {
+    "Station 1": 114,
+    "Station 2": 132,
+    "Time": 0
+  },
+  {
+    "Station 1": 115,
+    "Station 2": 131,
+    "Time": 0
+  },
+  {
+    "Station 1": 116,
+    "Station 2": 133,
+    "Time": 0
+  },
+  {
+    "Station 1": 117,
+    "Station 2": 134,
+    "Time": 0
+  },
+  {
+    "Station 1": 118,
+    "Station 2": 135,
+    "Time": 0
+  },
+  {
+    "Station 1": 119,
+    "Station 2": 136,
+    "Time": 0
+  },
+  {
+    "Station 1": 120,
+    "Station 2": 137,
+    "Time": 0
+  },
+  {
+    "Station 1": 121,
+    "Station 2": 138,
+    "Time": 0
+  },
+  {
+    "Station 1": 122,
+    "Station 2": 139,
+    "Time": 0
+  },
+  {
+    "Station 1": 123,
+    "Station 2": 140,
+    "Time": 0
+  },
+  {
+    "Station 1": 134,
+    "Station 2": 141,
+    "Time": 0
+  },
+  {
+    "Station 1": 135,
+    "Station 2": 142,
+    "Time": 0
+  },
+  {
+    "Station 1": 136,
+    "Station 2": 143,
+    "Time": 0
   }
 ]

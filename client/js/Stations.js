@@ -1,4 +1,4 @@
-[
+export const stations = [
   {
     "Id": 1,
     "Name": "Churchgate",
