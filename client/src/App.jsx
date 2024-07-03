@@ -18,7 +18,7 @@ function App() {
   const { colorMode, toggleColorMode } = useColorMode()
   return (
     <>
-      <Button backgroundColor='bg' _hover={{ backgroundColor: 'btn' }} position='fixed' zIndex={100} bottom={0} left={0} m='1rem' onClick={() => toggleColorMode()}>
+      <Button backgroundColor='bg' borderWidth='1px' _hover={{ backgroundColor: 'btn' }} position='fixed' zIndex={100} bottom={0} left={0} m='1rem' onClick={() => toggleColorMode()}>
         {colorMode == 'light' ? <MoonIcon /> : <SunIcon />}
       </Button>
       <Routes>
