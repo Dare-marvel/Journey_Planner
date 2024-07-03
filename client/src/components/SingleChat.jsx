@@ -172,7 +172,6 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             pb="3"
             px="2"
             w="100%"
-            fontFamily="Work sans"
             display="flex"
             justifyContent={{ base: "space-between" }}
             alignItems="center"
@@ -204,7 +203,8 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             flexDir="column"
             justifyContent="flex-end"
             p={3}
-            bg="#E8E8E8"
+            _dark={{ backgroundColor: 'gray.800' }}
+            _light={{ backgroundColor: 'gray.200' }}
             w="100%"
             h="100%"
             borderRadius="lg"
@@ -219,22 +219,20 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
                 margin="auto"
               />
             ) : (
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  overflowY: "scroll",
-                  scrollbarWidth: "none",
-                }}
+              <Box
+                display="flex"
+                flexDirection="column"
+                overflowY="scroll"
+                scrollbarWidth="none"
               >
                 <ScrollableChat messages={messages} isTyping={isTyping} />
-              </div>
+              </Box>
             )}
 
             <FormControl mt="3" onKeyDown={(e) => sendMessage(e)} isRequired>
               <Input
                 variant="filled"
-                bg="#E0E0E0"
+                _placeholder={{ color: 'txt_place' }}
                 placeholder="Enter a message.."
                 value={newMessage}
                 onChange={(e) => typingHandler(e)}
@@ -249,7 +247,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           justifyContent="center"
           h="100%"
         >
-          <Text fontSize="3xl" pb="3" fontFamily="Work sans">
+          <Text fontSize="3xl" pb="3">
             Click on a user to start chatting
           </Text>
         </Box>

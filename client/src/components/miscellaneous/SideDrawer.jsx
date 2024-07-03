@@ -136,14 +136,14 @@ const SideDrawer = () => {
         display="flex"
         justifyContent="space-between"
         alignItems="center"
-        bg="white"
+        bg="bg"
         w="100%"
         p="5px 10px 5px 10px"
         borderWidth="5px"
       >
         {/* Search User Section */}
         <Tooltip label="Search users to chat" hasArrow placement="bottom-end">
-          <Button variant="ghost" onClick={onOpen}>
+          <Button onClick={onOpen}>
             <i className="fas fa-search" />
             <Text display={{ base: "none", md: "flex" }} paddingX="2.5">
               Search User
@@ -182,9 +182,9 @@ const SideDrawer = () => {
                   {notif.chat.isGroupChat
                     ? `New Message in ${notif.chat[0].chatName}`
                     : `New Message from ${getSender(
-                        user,
-                        notif.chat[0].users
-                      )}`}
+                      user,
+                      notif.chat[0].users
+                    )}`}
                   {/* Change chat[0] to chat from server side */}
                 </MenuItem>
               ))}
@@ -223,6 +223,7 @@ const SideDrawer = () => {
             {/* Search User */}
             <Box display="flex" pb="2">
               <Input
+                _placeholder={{ color: 'txt_place' }}
                 placeholder="Search by name or email"
                 mr="2"
                 value={search}
